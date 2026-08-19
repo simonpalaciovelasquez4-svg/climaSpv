@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>App del Clima</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <h1>🌤️ Consulta el clima</h1>
+
+        <div class="buscador">
+            <input
+                type="text"
+                id="ciudad"
+                placeholder="Escribe una ciudad..."
+            >
+
+            <button id="buscar">
+                Buscar
+            </button>
+        </div>
+
+        <p id="mensaje"></p>
+
+        <section id="resultado" class="clima oculto">
+
+            <h2 id="nombreCiudad"></h2>
+
+            <img id="iconoClima" src="" alt="Icono del clima">
+
+            <h3 id="temperatura"></h3>
+
+            <p id="descripcion"></p>
+
+            <div class="datos">
+
+                <div>
+                    <span>💧</span>
+                    <p>Humedad</p>
+                    <strong id="humedad"></strong>
+                </div>
+
+                <div>
+                    <span>💨</span>
+                    <p>Viento</p>
+                    <strong id="viento"></strong>
+                </div>
+
+                <div>
+                    <span>🌡️</span>
+                    <p>Sensación</p>
+                    <strong id="sensacion"></strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
